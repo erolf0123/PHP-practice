@@ -1,0 +1,36 @@
+.loginback{
+	background: #F2994A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100vh;
+}
+.loginback2{
+	background: #E0EAFC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100vh;
+}
+.logincenter{
+	text-align: center;
+}
+.middle{
+	padding-top: 20%;
+}
+.font35{
+	font-size: 35px;
+	font-weight: 400;
+}
+.paddingleft30{
+	padding-left: 30px;
+}
+
+.s5middle{
+	padding-top: 30%
+}
+.font20{
+	font-size: 20px;
+}
+button{
+	width:100%;
+	text-align: center;
+}
