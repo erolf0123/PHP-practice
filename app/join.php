@@ -11,6 +11,8 @@
 <body>
 	<div class="container">
 		<div class="row">
+		<div class="register1">register</div>
+		<br><br>
 			<form class="col s12" action="joinok.php" method="POST" id="page">
 				<div class="row">
 					<div class="input-field col s12">
@@ -45,7 +47,7 @@
 	<script type="text/javascript">
 		$('#btn').click(function(){
 			if($('#password').val()!=$('#passwordcheck').val()){
-				alert("비번이 일치하지 않습니다.");
+				alert("비밀번호가 일치하지 않습니다.");
 			}
 			else{
 				$('#page').submit()
