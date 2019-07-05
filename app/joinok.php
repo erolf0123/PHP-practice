@@ -1,5 +1,5 @@
 <?php
-	$connect = new mysqli("127.0.0.1", 'root', '', 'app');
+	include('./connect.php');
 	$email=$_POST["email"];
 	$id=$_POST["id"];
 	$pw=$_POST["password"];
@@ -14,8 +14,9 @@
 		echo "<script> history.back()</script>";
 	}
 	else{
+		$pw1 = password_hash($pw, PASSWORD_DEFAULT);
 		echo"<script>alert('가입완료.')</script>";
-		$app = "INSERT INTO user(email, id, password) VALUES ('".$email."', '".$id."', '".$pw."')";
+		$app = "INSERT INTO user(email, id, password) VALUES ('".$email."', '".$id."', '".$pw1."')";
 	mysqli_query($connect,$app);
 	echo"<meta http-equiv='refresh' content='0;url=./login.php'>";
 	}
