@@ -25,7 +25,7 @@
 }
 
 .s5middle{
-	padding-top: 30%
+	padding-top: 30%;
 }
 .font20{
 	font-size: 20px;
@@ -38,4 +38,36 @@ button{
 	font-size: 35px;
 	color: indigo;
 	text-align: center;
+}
+.allbackground{
+	background-color: yellow !important;
+}
+.nav2{
+	background-color: gold; text-align: right;
+}
+.font20{
+	font-size: 20px;
+}
+.logo{
+	font-size: 22px !important;
+}
+.font100{
+	font-size:100px !important;
+}
+.yellow{
+	color:gold;
+}
+.green-text{
+	color: #00FF40;
+}
+.logocenter{
+	font-size: 30px;
+	text-align: center;
+}
+.wordspace{
+	word-spacing :20%;
+}
+.margin100{
+	text-align: center;
+	margin-top: 100px;
 }
