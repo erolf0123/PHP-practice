@@ -17,7 +17,7 @@
                 <div class="col s3"></div>
                 <div class="col s6 centerfont font37 orangefont">sand</div>
                 <div class="col s3"></div>
-                <br><br><br><br>
+                <br><br><br>
                 <div class="input-field col s12">
                     <i class="material-icons prefix"></i>
                     <input id="idcheck" name="idcheck" type="text" class="validate">
