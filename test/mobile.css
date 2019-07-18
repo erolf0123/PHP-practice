@@ -25,3 +25,12 @@ background: linear-gradient(to left, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Fi
 .orangefont{
 	color:#2EFEF7;
 }
+.margintop100{
+	margin-top: 80px;
+}
+.width100p{
+	width: 100%;
+}
+.margintop10{
+	margin-top: 10px;
+}

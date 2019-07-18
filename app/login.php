@@ -49,7 +49,7 @@
 	<script>
 		$('#lgin').click(function(){
 			if(!$("#idcheck").val()||!$("#pwcheck").val()){
-			alert("adsf");
+			alert("empty");
 		}
 			
 		})
