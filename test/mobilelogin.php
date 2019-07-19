@@ -18,7 +18,7 @@
                 <div class="col s3"></div>
                 <div class="col s6 centerfont font37 orangefont">sand</div>
                 <div class="col s3"></div>
-                <form action="./loginok.php" method="POST">
+                <form action="./loginok.php" method="POST" id="mobilecheck">
                     <div class="input-field col s12 margintop100">
                         <i class="material-icons prefix"></i>
                         <input id="idcheck" name="idcheck" type="text" class="validate">
@@ -30,18 +30,28 @@
                         <label for="icon_telephone">pw</label>
                     </div>
                     <div class="col s12">
-                        <div class="paddingleft30"><button class="btn waves-effect waves-light width100p" id="lgin" type="submit" name="action">
+                        <a class="btn waves-effect waves-light width100p" id="lgin">
                             <i class="material-icons ">SIGN IN</i>
-                        </button></div>
+                        </a>
                     </div>
                 </form>
                 <div class="col s12">
-                    <a href="./join.php"><div class="paddingleft3 margintop10"><button class="btn waves-effect waves-light width100p" type="submit" name="action">
+                    <a href="./join.php" class="btn waves-effect waves-light width100p margintop10">
                         <i class="material-icons ">SIGN UP</i>
-                    </button></div></a>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $('#lgin').click(function(){
+            if(!$("#idcheck").val()||!$("#pwcheck").val()){
+            alert("empty");
+        }
+            else{
+                $('#mobliecheck').submit();
+            }
+        })
+    </script>
 </body> 
 </html>
