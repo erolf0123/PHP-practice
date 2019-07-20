@@ -24,7 +24,7 @@
 			<div class="row">
 				<div class="col s1"><i class="material-icons">blur_on</i></div>
 				<div class="col s9 logo">SAND</div>
-				<div class="col s2"><i class="material-icons">search</i></div>
+				<div class="col s2"><a href="./search.php"><i class="material-icons">search</i></a></div>
 			</div>
 		</nav>
 		<div class="row">
@@ -39,24 +39,22 @@
 			<div id="test1" class="col s12">
 				<div class="row">
 					<a href="./sand-create.php">
-					<div class="col s6 m6">
-						<div class="card">
-							<div class="card-content yellow">
-								<span class="card-title"><div class="green-text">Sand</div></span>
-								<a href="./sand-create.php">
-									<i class="material-icons font100">add_circle_outline</i>
-								</a>
+						<div class="col s6 m6">
+							<div class="card height275">
+								<div class="yellow center">
+									<a href="./sand-create.php">
+										<i class="material-icons font100 height80p paddingtop22">add_circle_outline</i>
+									</a>
+								</div>
+								<span class="card-title center"><div class="fontbrown">Sand</div></span>
 							</div>
 						</div>
-					</div>
 					</a>
 					<div class="col s6 m6">
-						<div class="card">
-							<div class="card-content">
-								<span class="card-title">Sand</span>
-								<a >
-									<img src="https://w.namu.la/s/e14b7d868d865c4ea8c3a72eefe5180adb779edabae6928b1be7f3625c7232ea0ec0048e0172b302b455e7aa9c5a122cf10ac6a89d5ed5923be51059aba466cc28b0311b6b864011c75d9c645cb04857efa2ebfacbf6fc7ce2a75c480f4b674a" width="100%" height="100vh;">
-								</a>
+						<div class="card height275">
+							<div class="center">
+								<img src="https://w.namu.la/s/e14b7d868d865c4ea8c3a72eefe5180adb779edabae6928b1be7f3625c7232ea0ec0048e0172b302b455e7aa9c5a122cf10ac6a89d5ed5923be51059aba466cc93e92fd9f9c8cf0705f9d0e004ce15cb4ad025b16e15c7b0c26d2f0fa89d224c" width="100%" height="140vh;">
+								<span class="card-title fontbrown">Sand</span>
 							</div>
 						</div>
 					</div>

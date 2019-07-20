@@ -71,3 +71,86 @@ button{
 	text-align: center;
 	margin-top: 100px;
 }
+.width100{
+	width:100%;
+}
+.height33{
+	height: 33%;
+}
+.height275{
+	height: 27.5%;
+}
+.height80p{
+	height: 80%;
+}
+.paddingtop22{
+	padding-top: 22px;
+}
+.fontbrown{
+	color:brown;
+}
+.posifix{
+	position: fixed;
+	width: 100%;	
+	top: 0;
+	z-index: 2;
+}
+.searchcard{
+	height: 17%;
+}
+.margin110{
+	margin-top: 110px;
+}
+.border1{
+	border:1px solid gold;
+}
+.border1_2{
+	border:1px solid #E0EAFC;
+}
+.backimage{
+	background-image: url('http://postfiles5.naver.net/MjAxNzA2MDVfMTgg/MDAxNDk2NjUyNTc4OTA3._eTI682EK4pfpsgcOszH1p5Xj4Lf7rEyf2MHLJOpQCEg.MJaTbpEdI0eZ6GbKpzCs1t7i6ZLlNlfErPiEQZi45K4g.JPEG.citymedia1/2017-06-05_17-32-17.jpg?type=w773');
+	height: 40vh;
+}
+.fontwhite{
+	color:white;
+}
+.fontblack{
+	color:black;
+}
+.font22{
+	font-size: 22px;
+	font-weight: 600;
+}
+.font15{
+	font-size: 14px;
+	color:silver;
+	font-weight: 400;
+}
+.paddingtop5{
+	padding-top: 5px;
+}
+.font15_2{
+	font-size: 15;
+	font-weight: 540;
+}
+.fontsilver{
+	color:silver;
+}
+.font18{
+	font-size: 18px;
+	color:silver;
+	font-weight: 400;
+}
+.font33{
+	font-size: 33px;
+	color:white;
+}
+.backgroundgreen{
+	background-color: #3ADF00;
+}
+.margintop10{
+	margin-top: 10px;
+}
+.list-container{
+	margin-top: 120px;
+}
