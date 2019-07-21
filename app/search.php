@@ -1,21 +1,3 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@erolf0123 
-0
-0 0 erolf0123/PHP-practice Private
-Code  Issues 0  Pull requests 0  Projects 0  Security  Insights  Settings
-PHP-practice/app/search.php
-@erolf0123 erolf0123 update
-fa1ed02 2 days ago
-68 lines (63 sloc)  2.06 KB
-
 <html>
 <head>
 	<?php
@@ -53,28 +35,31 @@ fa1ed02 2 days ago
 			</div>
 		</nav>
 	</div>
-		<div>
+	<div>
 		<?php
 		while ($row = mysqli_fetch_array($query)) {
 			?>
 			<div class="col s12">
 				<div class="row">
 					<div class="col s4">
-						<img src="http://i.imgur.com/RoMN1Dr.jpg" width="100%">
+						<div>
+							<img src="http://i.imgur.com/RoMN1Dr.jpg" width="100%";>
+						</div>
 					</div>
 					<div class="col s8">
-						<p><?= $row['Sandname']?></p>
-						<p>
-							<?php
-							$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
-							$userdata=mysqli_fetch_array($userquery);
-							echo $userdata['id'];
-							?></p>
-						</div>
-					</div>	
-				</div>
-			<?php 
-		} ?>
-	</div>
-	</body>
-	</html>
+						<div>
+							<p><?= $row['Sandname']?></p>
+							<p>
+								<?php
+								$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
+								$userdata=mysqli_fetch_array($userquery);
+								echo $userdata['id'];
+								?></p>
+							</div>
+						</div>	
+					</div>
+					<?php 
+				} ?>
+			</div>
+		</body>
+		</html>
