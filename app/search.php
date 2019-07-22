@@ -1,9 +1,26 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@erolf0123 
+0
+0 0 erolf0123/PHP-practice Private
+Code  Issues 0  Pull requests 0  Projects 0  Security  Insights  Settings
+PHP-practice/app/search.php
+@erolf0123 erolf0123 update
+fa1ed02 2 days ago
+68 lines (63 sloc)  2.06 KB
+
 <html>
 <head>
 	<?php
-		include('connect.php');
-		$query = mysqli_query($connect, "select * from `sand` ");
-
+	include('connect.php');
+	$query = mysqli_query($connect, "select * from `sand` ");
 	?>
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -17,10 +34,10 @@
 </head>
 <body>
 	<div class="posifix">
-		<nav class="center col s12" style="background-color: gold;">
+		<nav class="center col s12" style="background-color: white;">
 			<div class="row">
-				<div class="col s2 center"><i class="material-icons">chevron_left</i></div>
-				<div class="col s8 center">search</div>
+				<div class="col s2 center"><i class="material-icons fontblack">chevron_left</i></div>
+				<div class="col s8 center font20black">search</div>
 				<div class="col s2"></div>
 			</div>
 		</nav>
@@ -36,33 +53,28 @@
 			</div>
 		</nav>
 	</div>
-	<div class="list-container">
-
-	<?php
-	while ($row = mysqli_fetch_array($query)) {
-?>
-	<div class="col s12 m7">
-		<div class="card horizontal">
-			<div class="card-image">
-				<img src="https://w.namu.la/s/e14b7d868d865c4ea8c3a72eefe5180adb779edabae6928b1be7f3625c7232ea0ec0048e0172b302b455e7aa9c5a122cf10ac6a89d5ed5923be51059aba466cc28b0311b6b864011c75d9c645cb04857efa2ebfacbf6fc7ce2a75c480f4b674a">
-			</div>
-			<div class="card-stacked">
-				<div class="card-content">
-					<p><?= $row['Sandname']?></p>
-					<p>
-					<?php
-					$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
-					$userdata=mysqli_fetch_array($userquery);
-					echo $userdata['id'];
-					?></p>
+		<div>
+		<?php
+		while ($row = mysqli_fetch_array($query)) {
+			?>
+			<div class="col s12">
+				<div class="row">
+					<div class="col s4">
+						<img src="http://i.imgur.com/RoMN1Dr.jpg" width="100%">
+					</div>
+					<div class="col s8">
+						<p><?= $row['Sandname']?></p>
+						<p>
+							<?php
+							$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
+							$userdata=mysqli_fetch_array($userquery);
+							echo $userdata['id'];
+							?></p>
+						</div>
+					</div>	
 				</div>
-			</div>
-		</div>
+			<?php 
+		} ?>
 	</div>
-	<?php 
-	} ?>
-	
-
-</div>
-</body>
-</html>
+	</body>
+	</html>

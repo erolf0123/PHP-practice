@@ -154,3 +154,10 @@ button{
 .list-container{
 	margin-top: 120px;
 }
+.fontblack{
+	color:black;
+}
+.font20black{
+	color:black;
+	font-size: 20px;
+}
