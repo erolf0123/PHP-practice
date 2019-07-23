@@ -1,9 +1,5 @@
 <html>
 <head>
-	<?php
-		include('connect.php');
-		$query = mysqli_query($connect, "select * from `user` ");
-	?>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 	<!-- Compiled and minified JavaScript -->
@@ -35,7 +31,7 @@
 		</div>
 		<div class="col s2"></div>
 	</div>
-	<div class="col s12 center backgroundgreen margintop10">
+	<div class="col s12 center backgroundgreen footer">
 		<a class="font33">Sand Join!</a>
 	</div>
 </div>
