@@ -6,14 +6,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="app.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="backimage col s12 row">
-		<div class="col s2"> <br><i class="material-icons fontwhite">house</i></div>
-		<div class="col s8"> <br></div>
-		<div class="col s2"> <br><i class="material-icons fontwhite">mode_edit</i></div>
+	<div class="row">
+		<div class="backimage col s12">
+			<div class="col s2"> <br><i class="material-icons fontwhite">house</i></div>
+			<div class="col s8"> <br></div>
+			<div class="col s2"> <br><i class="material-icons fontwhite">mode_edit</i></div>
+		</div>
 	</div>
 	<div class="container">
 		<div class="fontblack font22">1인분</div>
@@ -22,18 +24,17 @@
 		<br><br>
 	</div>
 	<hr>
-	<div class="col s12">
-		<div class="row">
-			<div class="col s2"></div>
-			<div class="col s8 center"><div><i class="large material-icons fontsilver">public</i></div>
+	<div class="row">
+		<div class="col s2"></div>
+		<div class="col s8 center">
+			<div><i class="large material-icons fontsilver">public</i></div>
 			<div class="font22">Join!</div>
 			<div class="font18">asdfasdf</div>
 		</div>
 		<div class="col s2"></div>
 	</div>
-	<div class="col s12 center backgroundgreen footer">
+	<div class="row center backgroundgreen footer">
 		<a class="font33">Sand Join!</a>
 	</div>
-</div>
 </body>
 </html>

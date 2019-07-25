@@ -108,7 +108,7 @@ button{
 	border:1px solid #E0EAFC;
 }
 .backimage{
-	background-image: url('http://postfiles5.naver.net/MjAxNzA2MDVfMTgg/MDAxNDk2NjUyNTc4OTA3._eTI682EK4pfpsgcOszH1p5Xj4Lf7rEyf2MHLJOpQCEg.MJaTbpEdI0eZ6GbKpzCs1t7i6ZLlNlfErPiEQZi45K4g.JPEG.citymedia1/2017-06-05_17-32-17.jpg?type=w773');
+	background-image: url('http://postfiles5.naver.net/20160603_132/ffuqi_min_1464957158668IuKql_JPEG/%B4%C0%B3%A6%C0%D6%B4%C2%BB%E7%C1%F801.jpg?type=w773');
 	height: 40vh;
 }
 .fontwhite{
@@ -163,26 +163,6 @@ button{
 }
 .footer{
 	position: absolute;
-	width: 103vw;
-	bottom: -19px;
-}
-.paddingtop20vh{
-	padding-top: 20vh;
-}
-.row {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px !important;
-    border-bottom: 1px solid silver;
-}
-.width100{
 	width: 100%;
-	height: 13vh;
-}
-.col {
-    float: left;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0 !important;
-    min-height: 1px;
+	bottom: 0px;
 }
