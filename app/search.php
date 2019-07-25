@@ -35,11 +35,11 @@
 			</div>
 		</nav>
 	</div>
-	<?php
-	while ($row = mysqli_fetch_array($query)) {
-		?>
-		<div class="col s12">
-			<div class="row">
+	<div class="col s12">
+		<div class="row">
+			<?php
+			while ($row = mysqli_fetch_array($query)) {
+				?>
 				<div class="col s4">
 					<div>
 						<img src="http://i.imgur.com/RoMN1Dr.jpg" width="100%">
@@ -47,20 +47,19 @@
 				</div>
 				<div class="col s8">
 					<div>
-						<p><?= $row['Sandname']?></p>
-						<p>
+						<div><?= $row['Sandname']?></div>
+						<div>
 							<?php
 							$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
 							$userdata=mysqli_fetch_array($userquery);
 							echo $userdata['id'];
 							?>
 
-						</p>
+						</div>
 					</div>
-				</div>	
+					</div>	<?php 
+				} ?>
 			</div>
 		</div>
-		<?php 
-	} ?>
-</body>
-</html>
+	</body>
+	</html>
