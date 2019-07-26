@@ -23,40 +23,37 @@
 				<div class="col s2"></div>
 			</div>
 		</nav>
-		<nav>
-			<div class="nav-wrapper">
-				<form >
-					<div class="input-field">
-						<input id="search" type="search" required>
-						<label class="label-icon" for="search"><i class="material-icons">search</i></label>
-						<i class="material-icons">search</i>
-					</div>
-				</form>
-			</div>
-		</nav>
+		<div class="row">
+		<div class="col s10">
+      <input value="" id="first_name2" type="text" class="validate"placeholder="글 내용, #태그, @작성자 검색">
+      </div>
+      <div class="col s2">
+      	<a class="waves-effect waves-light btn" style="margin-top: 10%">find</a>
+      </div>
+      </div>
 	</div>
-	<div class="row" style="padding-top: 20vh">
-		<?php
-		while($row=mysqli_fetch_array($query)){
-			?>
+	<br><br><br><br><br>
+	<div style="padding-top: 10px"></div>
+	<?php
+	while($row=mysqli_fetch_array($query)){
+		?>
+		<div class="row">
 			<div class="col s4">
-				<div>
-					<img src="https://www.istockphoto.com/kr/%EC%82%AC%EC%A7%84/%EA%B3%A0%EA%B8%89-%ED%94%8C%EB%9D%BC%EC%A3%BC-%EC%B2%98%EB%B0%95%EC%9D%80-%EC%97%AC%EB%A6%84-%ED%83%9C%EC%96%91-gm486798418-73464325" width="100%" height="20vh">
-				</div>
+				<img class="width100" src="https://w.namu.la/s/e14b7d868d865c4ea8c3a72eefe5180adb779edabae6928b1be7f3625c7232ea0ec0048e0172b302b455e7aa9c5a122cf10ac6a89d5ed5923be51059aba466cc93e92fd9f9c8cf0705f9d0e004ce15cb4ad025b16e15c7b0c26d2f0fa89d224c">
 			</div>
 			<div class="col s8">
 				<div><?= $row['Sandname']?></div>
-				<div>
+				<p>
 					<?php
 					$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
 					$userdata=mysqli_fetch_array($userquery);
 					echo $userdata['id'];
 					?>
-				</div>
+				</p>
 			</div>
-			<?php
-		}
-		?>
-	</div>
+		</div>
+		<?php
+	}
+	?>
 </body>
 </html>
