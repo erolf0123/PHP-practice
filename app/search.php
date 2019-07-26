@@ -35,31 +35,28 @@
 			</div>
 		</nav>
 	</div>
-	<div class="col s12">
-		<div class="row">
-			<?php
-			while ($row = mysqli_fetch_array($query)) {
-				?>
-				<div class="col s4">
-					<div>
-						<img src="http://i.imgur.com/RoMN1Dr.jpg" width="100%">
-					</div>
+	<div class="row" style="padding-top: 20vh">
+		<?php
+		while($row=mysqli_fetch_array($query)){
+			?>
+			<div class="col s4">
+				<div>
+					<img src="https://www.istockphoto.com/kr/%EC%82%AC%EC%A7%84/%EA%B3%A0%EA%B8%89-%ED%94%8C%EB%9D%BC%EC%A3%BC-%EC%B2%98%EB%B0%95%EC%9D%80-%EC%97%AC%EB%A6%84-%ED%83%9C%EC%96%91-gm486798418-73464325" width="100%" height="20vh">
 				</div>
-				<div class="col s8">
-					<div>
-						<div><?= $row['Sandname']?></div>
-						<div>
-							<?php
-							$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
-							$userdata=mysqli_fetch_array($userquery);
-							echo $userdata['id'];
-							?>
-
-						</div>
-					</div>
-					</div>	<?php 
-				} ?>
 			</div>
-		</div>
-	</body>
-	</html>
+			<div class="col s8">
+				<div><?= $row['Sandname']?></div>
+				<div>
+					<?php
+					$userquery=mysqli_query($connect, "select * from `user` where pk=".$row['Sandadmin']);
+					$userdata=mysqli_fetch_array($userquery);
+					echo $userdata['id'];
+					?>
+				</div>
+			</div>
+			<?php
+		}
+		?>
+	</div>
+</body>
+</html>
