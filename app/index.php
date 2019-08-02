@@ -14,7 +14,7 @@
 </head>
 <body>
 	<?php
-	session_start();
+	include('connect.php');
 	if(!isset($_SESSION['user']['id'])){
 		echo"<script>window.location.href='login.php'</script>";
 	}
@@ -35,6 +35,9 @@
 				<li class="tab col s3"><a href="#test4"><i class="material-icons">chat</i></a></li>
 			</ul>
 		</div>
+		<?php
+		$sand=mysqli_query($connect,'select * from sand');
+		?>
 		<div class="container">
 			<div id="test1" class="col s12">
 				<div class="row">
@@ -50,15 +53,23 @@
 							</div>
 						</div>
 					</a>
-					<div class="col s6 m6">
-						<div class="card height275">
-							<div class="center">
-								<img src="https://w.namu.la/s/e14b7d868d865c4ea8c3a72eefe5180adb779edabae6928b1be7f3625c7232ea0ec0048e0172b302b455e7aa9c5a122cf10ac6a89d5ed5923be51059aba466cc93e92fd9f9c8cf0705f9d0e004ce15cb4ad025b16e15c7b0c26d2f0fa89d224c" width="100%" height="80%;">
-								<span class="card-title fontbrown">Sand</span>
+					<?php
+					while($row=mysqli_fetch_array($sand)){
+						?>
+						<div class="col s6 m6">
+							<div class="card height275">
+								<a href="./sand.php?sand=<?=$row['pk']?>">
+									<div class="center">
+										<div class="imagesize" style="background-image: url(<?=$row['Image']?>);">
+										</div>
+										<span class="card-title fontbrown">Sand</span>
+									</div>
+								</a>
 							</div>
 						</div>
-					</div>
-
+						<?php
+					}
+					?>
 				</div>
 			</div>
 			<div id="test2" class="col s12">Test 2</div>
@@ -68,7 +79,6 @@
 		<?php
 	}
 	?>
-
 	<script>
 		$(document).ready(function(){
 			$('.tabs').tabs();

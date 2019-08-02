@@ -1,4 +1,4 @@
 <?php
-session_start();
+session_start();	
 $connect = new mysqli("127.0.0.1", 'root', '', 'app');
 ?>

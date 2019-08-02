@@ -165,3 +165,49 @@ button{
 	width: 100%;
 	bottom: 0px;
 }
+.backimage1{
+	background-image: url('https://aliceasmartialarts.com/wp-content/uploads/2017/04/default-image.jpg');
+	height: 33vh;
+	width: 100%;
+}
+.middlepage{
+	width: 100%;
+	height: 20vh;
+	background-color: white;
+}
+.fontbig{
+	font-weight: 600;
+}
+.fontgray{
+	color:gray;
+}
+.fontgreen{
+	color:#01DF01;
+}
+.rightsilverborder{
+	border-right:1px silver solid;
+}
+.font14{
+	font-size: 14px;
+	font-weight: 600;
+}
+.font28{
+	font-size: 28px;
+}
+.defaultpeople{
+
+}
+.bordertop{
+	border-top: 1px silver solid;
+}
+.font10{
+	font-size: 10px;
+}
+.borderbottom{
+	border-bottom: 1px silver solid;
+}
+.imagesize{
+	width: 100%;
+	height: 130px;
+	background-size:cover;
+}
