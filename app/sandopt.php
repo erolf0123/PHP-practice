@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<div class="optmiddle">
-		<div class="paddingtop10 fontsize16">
+		<div class="paddingtop5 fontsize16">
 			누구나 샌드를 검색해 찾을 수 있지만, 게시물은 멤버만 볼 수 있습니다.
 		</div>
 		<br>

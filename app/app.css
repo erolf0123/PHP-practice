@@ -224,7 +224,7 @@ button{
 }
 .optmiddle{
 	width: 100%;
-	height: 30%;
+	height: 25%;
 	background-color: white;
 }
 .paddingtop10{
@@ -251,4 +251,10 @@ button{
 }
 .paddingtop4{
 	padding-top: 4%;
+}
+.paddingtop50{
+	padding-top: 50%;
+}
+.paddingtop20{
+	padding-top: 20%;
 }

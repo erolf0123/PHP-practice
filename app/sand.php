@@ -53,7 +53,7 @@
 				<hr>
 			</div>
 			<div class="col s6 center">
-				<a href="">
+				<a href="sandpeople.php">
 				<i class="material-icons fontblack">group</i>
 			</a>
 			</div>
