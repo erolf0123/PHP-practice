@@ -53,10 +53,14 @@
 				<hr>
 			</div>
 			<div class="col s6 center">
+				<a href="">
 				<i class="material-icons fontblack">group</i>
+			</a>
 			</div>
 			<div class="col s6 center">
+				<a href="sandopt.php">
 				<i class="material-icons fontblack">apps</i>
+			</a>
 			</div>
 		</div>
 	</div>
