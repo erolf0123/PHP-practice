@@ -17,7 +17,7 @@
 	$row=mysqli_fetch_array($sand);
 	$sandname=$row['Sandname'];
 	$sandsand=mysqli_query($connect,"select * from sandjoin where band = ".$_GET['sand']);
-	$sand_member_count= mysqli_num_rows($sandsand)+1;
+	$sand_member_count= mysqli_num_rows($sandsand);
 	?>
 	<div class="backimage1">
 		<div class="row">
@@ -53,7 +53,7 @@
 				<hr>
 			</div>
 			<div class="col s6 center">
-				<a href="sandpeople.php">
+				<a href="sandpeople.php?sand=<?=$_GET['sand']?>">
 				<i class="material-icons fontblack">group</i>
 			</a>
 			</div>

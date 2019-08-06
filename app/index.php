@@ -54,15 +54,19 @@
 						</div>
 					</a>
 					<?php
-					while($row=mysqli_fetch_array($sand)){
+					$join_query=mysqli_query($connect,"select * from sandjoin where user='".$_SESSION[
+						'user']['pk']."'");
+					while($join_row=mysqli_fetch_array($join_query)){
+						$sand_query= mysqli_query($connect,"select * from sand where pk='".$join_row['band']."'");
+						$sand_row=mysqli_fetch_array($sand_query);
 						?>
 						<div class="col s6 m6">
 							<div class="card height275">
-								<a href="./sand.php?sand=<?=$row['pk']?>">
+								<a href="./sand.php?sand=<?=$sand_row['pk']?>">
 									<div class="center">
-										<div class="imagesize" style="background-image: url(<?=$row['Image']?>);">
+										<div class="imagesize" style="background-image: url(<?=$sand_row['Image']?>);">
 										</div>
-										<span class="card-title fontbrown">Sand</span>
+										<span class="card-title fontbrown"><?=$sand_row['Sandname']?></span>
 									</div>
 								</a>
 							</div>
