@@ -6,7 +6,7 @@
 		$query = mysqli_query($connect,"SELECT * FROM `sand` WHERE `Sandname` LIKE '%".$_GET['sand']."%'");
 	}
 	else{
-		$query = mysqli_query($connect,"SELECT * FROM 'sand'");
+		$query = mysqli_query($connect,"SELECT * FROM `sand`");
 	}
 	?>
 	<!-- Compiled and minified CSS -->
@@ -26,7 +26,14 @@
 			<div class="row">
 				<div class="col s2 center"><i class="material-icons fontblack">chevron_left</i></div>
 				<div class="col s8 center font20black">
-					<?=$_GET['sand']?></div>
+					<?php
+					if(isset($_GET['sand'])){
+					 echo $_GET['sand'];
+					}
+					else{
+						echo '샌드찾기';
+					}
+					?></div>
 					<div class="col s2"></div>
 				</div>
 			</nav>

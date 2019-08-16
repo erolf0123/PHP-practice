@@ -19,7 +19,7 @@
 	$sandsand=mysqli_query($connect,"select * from sandjoin where band = ".$_GET['sand']);
 	$sand_member_count= mysqli_num_rows($sandsand);
 	?>
-	<div class="backimage1">
+	<div class="backimage1" style="background-image:url(<?=$row['Image']?>)">
 		<div class="row">
 			<div class="col s2">
 				<i class="material-icons center fontwhite">arrow_back</i>
@@ -30,7 +30,7 @@
 				<i class="material-icons center fontwhite">search</i>
 			</div>
 			<div class="col s2">
-				<i class="material-icons center fontwhite">border_color</i>
+				<a href="/app/sandwrite.php?sand=<?=$_GET['sand']?>"><i class="material-icons center fontwhite">border_color</i></a>
 			</div>	
 		</div>
 	</div>
@@ -58,7 +58,7 @@
 			</a>
 			</div>
 			<div class="col s6 center">
-				<a href="sandopt.php">
+				<a href="sandopt.php?sand=<?=$_GET['sand']?>">
 				<i class="material-icons fontblack">apps</i>
 			</a>
 			</div>
@@ -78,6 +78,7 @@
 			</div>	
 		</div>
 		<div class="row">
+			<div class="container">좋아요 6개 댓글 12개</div> 
 			<div class="col s12 bordertop"> 
 				<div class="col s6">
 					<div class="center rightsilverborder">좋아요</div>

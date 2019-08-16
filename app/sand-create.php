@@ -14,8 +14,6 @@
 		.preview {
 			width : 100%;
 			height : 100%;	
-			max-width : 150px;
-			max-heigth : 150px;
 			cursor : pointer;
 		}
 
@@ -30,7 +28,7 @@
 	</style>
 </head>
 <body>
-	<form method="POST" action="sand-create-ok.php" id="form1">
+	<form enctype='multipart/form-data' method="POST" action="sand-create-ok.php" id="form1">
 		<div class="continer">
 			<nav>
 				<div class="col s12">
@@ -50,7 +48,7 @@
 							<div class="card-image">
 								<div>
 									<img class="preview" src="http://placehold.it/150x150"/>
-									<input id="upload" type="file" accept="image/*"/>
+									<input id="upload" name="image" type="file" accept="image/*"/>
 								</div>
 
 								<span class="card-title">

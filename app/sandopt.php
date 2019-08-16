@@ -50,7 +50,7 @@
 	</div>
 	<br>
 	<div class="optmiddle2">
-		<div class="fontsize22 paddingtop4 fontcolorred">밴드 탈퇴</div>
+		<a href="sanddelok.php?sand=<?=$_GET['sand']?>"><div class="fontsize22 paddingtop4 fontcolorred">밴드 탈퇴</div></a>
 		<hr>
 		<div class="fontsize22 paddingtop4s">밴드 신고</div>
 	</div>
