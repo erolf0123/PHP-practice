@@ -78,7 +78,6 @@
 			</div>	
 		</div>
 		<div class="row">
-			<div class="container">좋아요 6개 댓글 12개</div> 
 			<div class="col s12 bordertop"> 
 				<div class="col s6">
 					<div class="center rightsilverborder">좋아요</div>
