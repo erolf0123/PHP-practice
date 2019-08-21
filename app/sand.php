@@ -86,6 +86,9 @@
 					<div class="center">댓글쓰기</div>
 				</div>
 			</div>
+			<div class="col s12 bordertop">
+				asdf
+			</div>
 		</div>
 	</div>
 </div>

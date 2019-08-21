@@ -293,3 +293,6 @@ button{
 .backcolorwhite{
 	background-color: #fff;
 }
+.topline{
+	border-top: 1px solid silver;
+}
