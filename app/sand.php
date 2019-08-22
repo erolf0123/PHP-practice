@@ -39,7 +39,7 @@
 			<div class="col s9">
 				<div class="font18 fontblack fontbig">
 					<?=
-						$sandname
+					$sandname
 					?>
 				</div>
 				<div>
@@ -54,13 +54,13 @@
 			</div>
 			<div class="col s6 center">
 				<a href="sandpeople.php?sand=<?=$_GET['sand']?>">
-				<i class="material-icons fontblack">group</i>
-			</a>
+					<i class="material-icons fontblack">group</i>
+				</a>
 			</div>
 			<div class="col s6 center">
 				<a href="sandopt.php?sand=<?=$_GET['sand']?>">
-				<i class="material-icons fontblack">apps</i>
-			</a>
+					<i class="material-icons fontblack">apps</i>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -77,7 +77,7 @@
 				C언어로 해킹이 가능한가요 답변 부탁드립니다.
 			</div>	
 		</div>
-		<div class="row">
+		<div class="row" style="margin:0px;">
 			<div class="col s12 bordertop"> 
 				<div class="col s6">
 					<div class="center rightsilverborder">좋아요</div>
@@ -86,8 +86,15 @@
 					<div class="center">댓글쓰기</div>
 				</div>
 			</div>
-			<div class="col s12 bordertop">
-				asdf
+		</div>
+		<div class="row #bdbdbd grey lighten-1">
+			<div class="s12 bordertop">
+				<div class="col s2">
+					<img src="https://t3.ftcdn.net/jpg/00/64/67/52/240_F_64675209_7ve2XQANuzuHjMZXP3aIYIpsDKEbF5dD.jpg" width="40px;" height="40px;">
+				</div>
+				<div class="col s10">
+					asdf님
+				</div>
 			</div>
 		</div>
 	</div>
