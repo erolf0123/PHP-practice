@@ -72,6 +72,7 @@
 		$name=mysqli_query($connect,"select * from user where pk=".$story_array['writer']."");
 		$name_array=mysqli_fetch_array($name);
 		?>
+		<a href="post.php?post=<?=$story_array['pk']?>">
 		<div class="card">
 			<div class="row">
 				<div class="col s2">
@@ -132,6 +133,7 @@
 				</div>
 			</div>
 		</div>
+	</a>
 		<?php
 	}
 	?>
