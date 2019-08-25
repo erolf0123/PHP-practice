@@ -11,6 +11,8 @@
 </head>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript">
+</script>
 </head>
 <body>
 	<?php

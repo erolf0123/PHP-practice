@@ -169,6 +169,7 @@ button{
 	background-image: url('https://aliceasmartialarts.com/wp-content/uploads/2017/04/default-image.jpg');
 	height: 33vh;
 	width: 100%;
+	background-size: cover;
 }
 .middlepage{
 	width: 100%;
@@ -271,4 +272,24 @@ button{
 }
 .paddingtop8{
 	padding-top: 8%;
+}
+.writetop{
+	width: 100%;
+	height: 8%;
+	background-color: #2E2E2E;
+}
+.paddingtop20{
+	padding-top: 20%;
+}
+.margintop20{
+	margin-top: 20%;
+}
+.margin0{
+	margin:0px !important;
+}
+.padding0{
+	padding: 0px !important;
+}
+.backcolorwhite{
+	background-color: #fff;
 }
