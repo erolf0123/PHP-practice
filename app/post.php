@@ -55,10 +55,7 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 	<div class="like borderbtm #eeeeee grey lighten-3">
 		<div class="row borderbtm margin000">
 			<div class="col"><img class="paddingupdown" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bot%C3%B3n_Me_gusta.svg/1200px-Bot%C3%B3n_Me_gusta.svg.png" height="30px;" width="30px;"></div>
-			<div class="col"><img class="OOOO marginOO" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K7OGtmSne8cwi9RniCbUVSkVQUrbtvb6u1wubof2ZOFT87HKcQ" height="30px" width="30px">
-				<img class="OOOO marginOO" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K7OGtmSne8cwi9RniCbUVSkVQUrbtvb6u1wubof2ZOFT87HKcQ" height="30px" width="30px">
-				<img class="OOOO marginOO" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K7OGtmSne8cwi9RniCbUVSkVQUrbtvb6u1wubof2ZOFT87HKcQ" height="30px" width="30px">
-				<img class="OOOO marginOO" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K7OGtmSne8cwi9RniCbUVSkVQUrbtvb6u1wubof2ZOFT87HKcQ" height="30px" width="30px">
+			<div class="col">
 			</div>
 		</div>
 		<div class="container">
