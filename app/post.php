@@ -56,6 +56,10 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 		<div class="row borderbtm margin000">
 			<div class="col"><img class="paddingupdown" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bot%C3%B3n_Me_gusta.svg/1200px-Bot%C3%B3n_Me_gusta.svg.png" height="30px;" width="30px;"></div>
 			<div class="col">
+				<?php
+					$likenum=mysqli_query($connect,"select * from storylike where story = ".$_GET['post']."");
+					$likethis=mysqli_num_rows()
+				?>
 			</div>
 		</div>
 		<div class="container">
