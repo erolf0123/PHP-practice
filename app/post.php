@@ -58,7 +58,7 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 			<div class="col">
 				<?php
 					$likenum=mysqli_query($connect,"select * from storylike where story = ".$_GET['post']."");
-					$likethis=mysqli_num_rows()
+					$likerows=mysqli_num_rows($likenum);
 				?>
 			</div>
 		</div>
