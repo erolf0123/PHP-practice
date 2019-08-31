@@ -94,7 +94,7 @@
 					?>
 				</div>	
 			</div>
-			<div class="container">좋아요 0개 댓글 1개</div>
+			<div class="container">게시글 확인하기</div>
 			<div class="row like-btn" style="margin:0px;">
 				<?php
 				$check_query=mysqli_query($connect,"select * from storylike where user= ".$_SESSION['user']['pk']." and story=".$story_array['pk']);

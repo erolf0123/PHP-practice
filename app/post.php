@@ -59,8 +59,8 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 				<?php
 					$likenum=mysqli_query($connect,"select * from storylike where story = ".$_GET['post']."");
 					$likerows=mysqli_num_rows($likenum);
-					echo $likerows;
 				?>
+				<div class="fontblack BBfont" style="line-height: 51px;"><?=$likerows?></div>
 			</div>
 		</div>
 		<div class="container">
