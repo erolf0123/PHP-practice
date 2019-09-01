@@ -62,6 +62,14 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 				?>
 				<div class="fontblack BBfont" style="line-height: 51px;"><?=$likerows?></div>
 			</div>
+			<div class="col"><img class="paddingupdown marginleft20" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-004_comment_chat-512.png" height="30px;" width="30px"></div>
+			<div class="col">
+				<?php
+					$commentnum=mysqli_query($connect,"select * from comment where story =".$_GET['post']."");
+					$commentrows=mysqli_num_rows($commentnum);
+				?>
+				<div class="fontblack BBfont" style="line-height: 51px;"><?=$commentrows?></div>
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">
