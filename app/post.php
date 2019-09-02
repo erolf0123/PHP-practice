@@ -15,12 +15,16 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./app.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 	<div class="top1 center">
 		<div class="row">
-			<div class="col s2">
-				<i class="material-icons center fontwhite" style="line-height: 50px;">arrow_back</i>
+			<div class="col s2"><?php
+				$search1=mysqli_query($connect,"select * from story where pk = '".$_GET['post']."'");
+				$searcharr=mysqli_fetch_array($search1);
+			?>
+				<a href="./sand.php?sand=<?=$searcharr['band']?>"><i class="material-icons center fontwhite" style="line-height: 50px;">arrow_back</i></a>
 			</div>
 			<div class="col s8 topfont1 center" style="line-height: 50px;">
 				Sand
@@ -47,7 +51,6 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 			<div class="container">
 				<div class="col s12">
 					<?=$post_sql_array['text']?>
-					<?=$_SESSION['user']['pk']?>
 				</div>
 			</div>
 		</div>
@@ -92,7 +95,7 @@ $writer_sql_array=mysqli_fetch_array($writer_sql);
 		<div class="#eeeeee grey lighten-3">
 
 			<?php
-			$comment_query= mysqli_query($connect,'select * from comment where story="'.$_GET['post'].'"');
+			$comment_query= mysqli_query($connect,'select * from comment where story="'.$_GET['post'].'" ORDER BY `pk` desc');
 			while($row=mysqli_fetch_array($comment_query)){
 				$comuser=mysqli_query($connect,'select * from user where pk="'.$row['user'].'")');
 				$comquery= mysqli_query($connect,'select * from user where pk="'.$row['user'].'"');

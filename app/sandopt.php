@@ -31,7 +31,7 @@
 		</div>
 		<br>
 		<hr>
-		<div class="row">
+		<div class="row" onclick="alert('준비중')">
 			<div class="col s6">
 				<div class="center fontsize22 paddingtop5">멤버 초대</div>
 			</div>
@@ -42,7 +42,7 @@
 	</div>
 	<br><br>
 	내 설정
-	<div class="optmiddle1">
+	<div class="optmiddle1" onclick="alert('준비중')">
 		<div class="fontsize22 paddingtop5">이 밴드 프로필 설정</div>
 		<hr>
 		<div class="fontsize22 paddingtop5">일정 내보내기</div>
@@ -52,7 +52,9 @@
 	<div class="optmiddle2">
 		<a href="sanddelok.php?sand=<?=$_GET['sand']?>"><div class="fontsize22 paddingtop4 fontcolorred">밴드 탈퇴</div></a>
 		<hr>
-		<div class="fontsize22 paddingtop4s">밴드 신고</div>
+		<a href="./logout.php">
+		<div class="fontsize22 paddingtop4s">로그아웃</div>
+		</a>
 	</div>
 </body>
 </html>
