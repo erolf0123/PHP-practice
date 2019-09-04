@@ -34,13 +34,13 @@
 				</div>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" name="email" class="validate">
+						<input id="email" ty pe="email" name="email" class="validate">
 						<label for="email">Email</label>
 					</div>
 				</div>
 				<div class="center">
 					<a class="btn waves-effect waves-light" id="btn" type="submit" name="action">
-						<i class="material-icons"> Sign  Up </i>
+						<i class="material-icons"> Sign Up </i>
 					</a>
 				</div>
 			</form>
