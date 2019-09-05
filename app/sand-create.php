@@ -33,7 +33,7 @@
 			<nav>
 				<div class="col s12">
 					<div class="row">
-						<div class="col s2 center">Back</div>
+						<a href="./index.php"><div class="col s2 center">Back</div></a>
 						<div class="col s8 center">Create sand</div>
 						<div id="sub" class="col s2 cetner">Create</div>	
 					</div>

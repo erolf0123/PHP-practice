@@ -12,18 +12,12 @@
 		$_SESSION['user']=$check;
 		}
 		else{
-			if(password_verify($_POST['pwcheck'], $check['password'])){
-				echo "check";
-			}
-			else{
-				echo $_POST['pwcheck'];
-			}
-			//echo "<script>alert('비번이틀림 ');</script>";
-			//echo"<meta http-equiv='refresh' content='0;url=./login.php'>";
+			echo "<script>alert('비번X ');</script>";
+			echo"<meta http-equiv='refresh' content='0;url=./login.php'>";
 		}
 	}
 	else{
-		echo "<script>alert('아이디도틀림 ');</script>";
+		echo "<script>alert('아이디X ');</script>";
 		echo"<meta http-equiv='refresh' content='0;url=./login.php'>";
 	}
 ?>

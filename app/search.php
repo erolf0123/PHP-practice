@@ -24,7 +24,7 @@
 	<div class="posifix">
 		<nav class="center col s12" style="background-color: white;">
 			<div class="row">
-				<div class="col s2 center"><i class="material-icons fontblack">chevron_left</i></div>
+				<div class="col s2 center"><a href="./index.php"><i class="material-icons fontblack">chevron_left</i></a></div>
 				<div class="col s8 center font20black">
 					<?php
 					if(isset($_GET['sand'])){

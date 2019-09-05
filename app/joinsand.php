@@ -22,7 +22,7 @@
 	?>
 	<div class="row">
 		<div class="backimage col s12" style="background-image: url(<?= $sand_data['Image']?>)">
-			<div class="col s2"> <br><i class="material-icons fontwhite">house</i></div>
+			<div class="col s2"> <br><a href="./index.php"><i class="material-icons fontwhite">house</i></a></div>
 			<div class="col s8"> <br></div>
 			<div class="col s2"> <br><i class="material-icons fontwhite">mode_edit</i></div>
 		</div>

@@ -16,7 +16,7 @@
 			<input type="text" placeholder="Username" name="idcheck">
 			<input type="password" placeholder="Password" name="pwcheck">
 			<div><button type="submit" id="lgin">Login</button></div>
-			<button style="margin-top: 10px;" type="submit" id="login-button" onclick="window.location.href='pwpw.php'">Join</button>
+			<button style="margin-top: 10px;" type="submit" id="login-button" onclick="window.location.href='join.php'">Join</button>
 		</form>
 	</div>
 	
