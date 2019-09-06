@@ -17,7 +17,7 @@ include('connect.php');
 	<div class="header">
 		<div class="row">
 			<div class="col s3">
-				<i class="Medium material-icons center fontwhite">arrow_back</i>
+				<a href=""><i class="Medium material-icons center fontwhite">arrow_back</i></a>
 			</div>
 			<div class="col s6 center">
 				<div class="fontwhite font22">멤버</div>
