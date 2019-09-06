@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<br><br><br><br><br>
-		<div style="padding-top: 10px"></div>
+		<div style="padding-top: 20px"></div>
 		<?php
 		while($row=mysqli_fetch_array($query)){
 			?>

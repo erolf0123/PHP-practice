@@ -46,9 +46,9 @@
 		</div>
 		<div class="col s2"></div>
 	</div>
-	<a >
+	<a href="./sandjoinok.php?sand=<?=$sand?>">
 		<div class="row center backgroundgreen footer">
-			<a href="./sandjoinok.php?sand=<?=$sand?>" class="font33">Sand Join!</a>
+			JOIN!
 		</div>
 	</a>
 </body>
