@@ -14,7 +14,7 @@
 	<div class="header">
 		<div class="row">
 			<div class="col s2">
-				<i class="Medium material-icons center fontwhite">close</i>
+				<a href="./sand.php?sand=<?=$_GET['sand']?>"><i class="Medium material-icons center fontwhite">close</i></a>
 			</div>
 			<div class="col s8">
 				<div  class="center fontwhite fontsize22 paddingtop5">
