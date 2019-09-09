@@ -358,3 +358,14 @@ a{
 .marginleft20{
 	margin-left: 20px;
 }
+.bottombtn{
+	height: 70px;
+	line-height: 70px;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0 !important;
+}
+.pxpx30{
+	font-size: 30px;
+	
+}

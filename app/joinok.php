@@ -14,7 +14,7 @@
 		echo "<script> history.back()</script>";
 	}
 	else{
-		$pw1 = password_hash($pw, PASSWORD_BCRYPT);
+		$pw1 = password_hash($pw, PASSWORD_DEFAULT);
 		echo"<script>alert('가입완료.')</script>";
 		$app = "INSERT INTO user(email, id, password) VALUES ('".$email."', '".$id."', '".$pw1."')";
 	mysqli_query($connect,$app);

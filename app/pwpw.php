@@ -14,7 +14,7 @@
 		
 		<form class="form" method="POST" action="./joinok.php">
 			<input type="text" placeholder="Id" name="id">
-			<input type="password" placeholder="Password" id="password" name="pwcheck1">
+			<input type="password" placeholder="Password" id="password" name="password">
 			<input type="password" id="passwordcheck" placeholder="Password Check" name="pwcheck2">
 			<input type="email" placeholder="Email" name="email">
 			<div><button style="margin-top: 10px;" type="submit" id="login-button btn" onclick="window.location.href='login.php'">Sign Up</button></div>

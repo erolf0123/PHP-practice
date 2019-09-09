@@ -33,7 +33,7 @@
 		?></div>
 		<div class="font15 paddingtop5">멤버 2150 · 리더<?php 
 		echo $userdata['id'];  ?> </div>
-		<div class="paddingtop5 font15_2 ">혼밥 맛있게...............</div>
+		<div class="paddingtop5 font15_2 ">준비중</div>
 		<br><br>
 	</div>
 	<hr>
@@ -47,7 +47,7 @@
 		<div class="col s2"></div>
 	</div>
 	<a href="./sandjoinok.php?sand=<?=$sand?>">
-		<div class="row center backgroundgreen footer">
+		<div class="row center backgroundgreen footer bottombtn pxpx30">
 			JOIN!
 		</div>
 	</a>
